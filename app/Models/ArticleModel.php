@@ -20,6 +20,7 @@ class ArticleModel extends Model
     public function getArticles($slug = false)
     {
         if ($slug === false) {
+            // Fetch articles in descending order
             return $this->orderBy('updated_at', 'DESC')->findAll();
         }
 

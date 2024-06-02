@@ -7,15 +7,14 @@ use App\Controllers\Pages;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-$routes->get('/articles', 'Articles::index');
-// $routes->get('/articles/create', [Articles::class, 'create']);
-// $routes->get('/articles/create', [Articles::class, 'create']);
-$routes->post('/articles/store', 'Articles::store');
-// $routes->get('/articles/edit/(:segment)', [Articles::class, 'edit/$1']);
-$routes->post('/articles/update/(:segment)', [Articles::class, 'update/$1']);
-$routes->post('/articles/delete/(:segment)', [Articles::class, 'delete/$1']);
-$routes->get('/articles/(:segment)', 'Articles::detail/$1');
-$routes->get('pages', [Pages::class, 'index']);
-$routes->get('(:segment)', [Pages::class, 'view']);
+$routes->get('/', 'Home::index'); // First page
+$routes->get('/articles', 'Articles::index'); // Articles page
+$routes->post('/articles/store', 'Articles::store'); // Saves an article to the database
+$routes->post('/articles/update/(:segment)', [Articles::class, 'update/$1']); // Updates an article in the database
+$routes->post('/articles/delete/(:segment)', [Articles::class, 'delete/$1']); // Deletes an article from the database
+$routes->get('/articles/(:segment)', 'Articles::detail/$1'); // Routes to the article detail page for viewing
+$routes->get('pages', [Pages::class, 'index']); // Routes to all other pages, including pages/home
+$routes->get('(:segment)', [Pages::class, 'view']); // Routes to a viewable segment of the page
+
+ //All routing syntaxes are correct
 

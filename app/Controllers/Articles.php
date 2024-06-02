@@ -7,8 +7,11 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Articles extends BaseController
 {
+    // App title
     public static $app_title = 'Article Repo';
 
+
+    // Fetch all the articles from the database
     public function index()
     {
         $model = model(ArticleModel::class);
@@ -25,6 +28,8 @@ class Articles extends BaseController
             . view('templates/footer');
     }
 
+
+    // Fetch and display the details of a specified article on the details page
     public function detail(?string $slug = null)
     {
         $model = model(ArticleModel::class);
@@ -44,6 +49,8 @@ class Articles extends BaseController
             . view('templates/footer');
     }
 
+
+    // Store a newly created article in the database
     public function store()
     {
         helper('form');
@@ -82,6 +89,8 @@ class Articles extends BaseController
         ]);
     }
 
+
+    // Update the details of an existing article
     public function update($id)
     {
         helper('form');
@@ -120,7 +129,8 @@ class Articles extends BaseController
         ]);
     }
 
-
+    
+    // Delete a specified article from the database
     public function delete($id)
     {
         $model = new ArticleModel();
@@ -137,7 +147,5 @@ class Articles extends BaseController
             ]);
         }
     }
-
-    
 
 }

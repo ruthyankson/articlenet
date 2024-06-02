@@ -23,6 +23,8 @@
     </nav>
 
     <div class="spacer"></div>
+    
+    <!-- Page title -->
     <div id="main-title" class="container">
         <h1><?= esc($title) ?></h1>
     </div>

@@ -1,9 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f4f4f4; */
     background: linear-gradient(135deg, #f6d46587 0%, #fd9f8586 100%);
     margin: 0;
-    /* padding: 20px; */
 }
 
 .action-buttons {
@@ -23,6 +21,8 @@ body {
 .centered {
     text-align: center;
 }
+
+/* Article page title styles */
 
 #main-title {
     text-align: center;
@@ -62,6 +62,7 @@ h1 {
     margin-right: 5px;
 }
 
+/* Modal Styles */
 .modal-header, .modal-body, .modal-footer {
     padding: 20px;
 }

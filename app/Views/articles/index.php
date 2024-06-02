@@ -1,4 +1,5 @@
 
+    <!-- Articles Table -->
     <div class="container">
         <span class="centered"><h2>Articles</h2></span>
         <button class="btn btn-primary" data-toggle="modal" data-target="#articleModal" onclick="openModal('create')">Add New Article</button>

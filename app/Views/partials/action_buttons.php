@@ -1,3 +1,4 @@
+<!-- Action buttons on Articles page: view, edit, and delete -->
 <div class="action-buttons" style="display: flex; gap: 10px;">
                                 
     <a href="/articles/<?= $article['slug'] ?>" class="btn btn-info">
