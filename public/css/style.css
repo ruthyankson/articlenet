@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background: linear-gradient(135deg, #f6d46587 0%, #fd9f8586 100%);
+    margin: 0;
+    /* padding: 20px; */
+}
+
+.action-buttons {
+    display: flex; gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.spacer {
+    padding-top: 40px;
+}
+
+.space-flex {
+    flex: 1 1 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+#main-title {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    border: 2px dashed #007bff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table {
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 20px;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.close {
+    font-size: 1.5rem;
+}
+
+/* Custom styles for the navigation bar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #001738b1 !important;
+    background-color: #f8e0b1dc;
+    padding: 15px 20px !important;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav div ul li .nav-link:hover{
+    color: #0066f5;
+}
+
+
+
+/* Custom styles for the footer */
+footer {
+    margin-top: 2rem;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .bg-dark {
+    background-color: #343a40 !important;
+}
+
+
+
+
