@@ -1,0 +1,35 @@
+// MySQL
+
+// You may create your database in another way_ using phpmyadmin or Laragon HeidiSQL or MySQL Workbench
+
+// Database
+CREATE DATABASE articlenetdb;
+
+// Database user with full permission
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON articlenetdb.* TO 'raydb'@'localhost';
+FLUSH PRIVILEGES;
+
+// Article table
+CREATE TABLE articles (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(128) NOT NULL,
+    slug VARCHAR(128) NOT NULL UNIQUE,
+    body TEXT NOT NULL,
+    writer VARCHAR(128) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+// Sample articles
+INSERT INTO articles (title, slug, body, writer) VALUES
+('Exploring the Universe', 'exploring-the-universe', 'The universe is vast and full of mysteries. Scientists have been exploring it for centuries, uncovering new secrets with each passing year.', 'John Doe'),
+('The Future of Technology', 'future-of-technology', 'Technology is evolving at an unprecedented pace. From AI to quantum computing, the future holds endless possibilities.', 'Jane Smith'),
+('The Impact of Climate Change', 'impact-of-climate-change', 'Climate change is one of the most pressing issues of our time. Its effects are being felt across the globe, prompting urgent action.', 'Alice Johnson'),
+('Advancements in Medicine', 'advancements-in-medicine', 'Medical science has made significant strides in recent years, leading to new treatments and improved patient outcomes.', 'Robert Brown'),
+('Understanding Quantum Mechanics', 'understanding-quantum-mechanics', 'Quantum mechanics is a fundamental theory in physics that describes the behavior of particles at the atomic and subatomic levels.', 'Michael Davis'),
+('Artificial Intelligence and Society', 'ai-and-society', 'AI is transforming various aspects of society, from healthcare to transportation, and raising important ethical questions.', 'Mary Wilson'),
+('The History of Ancient Civilizations', 'history-of-ancient-civilizations', 'Ancient civilizations such as Egypt, Greece, and Rome have left an indelible mark on history and continue to fascinate us today.', 'William Martinez'),
+('The Beauty of Nature', 'beauty-of-nature', 'Nature offers a wealth of beauty and inspiration. From majestic mountains to serene lakes, it provides a respite from the hustle and bustle of modern life.', 'Linda Anderson'),
+('The Power of Renewable Energy', 'power-of-renewable-energy', 'Renewable energy sources like solar and wind power are crucial for a sustainable future and reducing our reliance on fossil fuels.', 'David Thomas'),
+('The Art of Storytelling', 'art-of-storytelling', 'Storytelling is a powerful tool for connecting with others and conveying important messages. It has been an integral part of human culture for millennia.', 'Patricia Harris');
+
