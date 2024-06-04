@@ -61,16 +61,19 @@ To set up the ArticleNet app, follow these steps:
     database.default.database = articlenet_db
     database.default.username = your_db_username
     database.default.password = your_db_password
-    database.default.DBDriver = PostgreSQL
+    database.default.DBDriver = MySQLi
+    database.default.DBPrefix =
+    database.default.port = 3306
     ```
 
 4. **Set Up Database**
 
-    Create your database using your favorite SQL variation and run similar commands as can be found in the *databasefile.txt* to create tables and insert values accordingly.
+    Create your database using your favorite SQL variation and run similar commands as in the *databasefile.txt* to create tables and insert values accordingly.
 
 ## Usage
 
-Start the development server:
+Start the development server: 
+* &nbsp;
 
     ```sh
     php spark serve
