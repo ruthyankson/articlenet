@@ -72,8 +72,7 @@ To set up the ArticleNet app, follow these steps:
 
 ## Usage
 
-Start the development server: 
-* &nbsp;
+* Start the development server: 
 
     ```sh
     php spark serve
