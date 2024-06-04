@@ -4,6 +4,9 @@ ArticleNet is a web application developed using CodeIgniter 4, designed to perfo
 
 ## App Demo
 
+Click to watch the full demo.
+
+[![ArticleNet Demo](media/artn1.png)](https://youtu.be/wBsG0sF6PsM)
 
 
 ## Features
