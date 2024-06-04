@@ -8,7 +8,6 @@ Click to watch the full demo.
 
 [![ArticleNet Demo](media/artn1.png)](https://youtu.be/wBsG0sF6PsM)
 
-
 ## Features
 
 - **Create Articles**: Add new articles with a title, content, and author information.
@@ -43,15 +42,15 @@ To set up the ArticleNet app, follow these steps:
 
 2. **Install Dependencies**
 
-Install the required dependencies using Composer.
+    Install the required dependencies using Composer.
 
     ```sh
     composer install
     ```
 
-3.  **Set Up Environment Variables**
+3. **Set Up Environment Variables**
 
-Rename the .env.example file to .env and configure your database settings
+    Rename the `.env.example` file to `.env` and configure your database settings:
 
     ```ini
     # .env
@@ -67,11 +66,11 @@ Rename the .env.example file to .env and configure your database settings
 
 4. **Set Up Database**
 
-Create your database using your favourite SQL variation and run similar commands as can be found in the *databasefile.txt* to create tables and insert values accordingly.
+    Create your database using your favorite SQL variation and run similar commands as can be found in the *databasefile.txt* to create tables and insert values accordingly.
 
 ## Usage
 
-Start the development server.
+Start the development server:
 
     ```sh
     php spark serve
