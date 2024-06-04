@@ -36,9 +36,9 @@ To set up the ArticleNet app, follow these steps:
 
 1. **Clone the Repository**
 
-   ```sh
-   git clone https://github.com/ruthyankson/articlenet.git
-   cd articlenet
+    ```sh
+    git clone https://github.com/ruthyankson/articlenet.git
+    cd articlenet
     ```
 
 2. **Install Dependencies**
